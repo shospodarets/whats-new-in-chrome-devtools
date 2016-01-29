@@ -1,22 +1,21 @@
 {
-  "name": "reveal.js",
-  "version": "3.2.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
+  "name": "whats-new-in-chrome-devtools",
+  "version": "1.0.0",
+  "description": "The HTML Presentation",
+  "homepage": "https://github.com/malyw/whats-new-in-chrome-devtools",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Serg Gospodarets",
+    "email": "sgospodarets@gmail.com",
+    "web": "https://blog.gospodarets.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/malyw/whats-new-in-chrome-devtools.git"
   },
   "engines": {
     "node": "~4.1.1"
