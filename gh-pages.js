@@ -3,7 +3,9 @@ var path = require('path');
 
 ghpages.publish(
     __dirname,
-    'css',
+    {
+        basePath: ['css']
+    },
     (err)=> {
         console.log('gw-pages error:', err);
     });
