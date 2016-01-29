@@ -3,7 +3,7 @@ var path = require('path');
 
 ghpages.publish(
     __dirname,
-    '(css|img)',
+    'css',
     (err)=> {
         console.log('gw-pages error:', err);
     });
