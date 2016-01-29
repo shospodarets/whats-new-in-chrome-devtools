@@ -1,7 +1,7 @@
 {
   "name": "whats-new-in-chrome-devtools",
   "version": "1.0.0",
-  "description": "The HTML Presentation",
+  "description": "Latest additions to Chrome DevTools",
   "homepage": "https://github.com/malyw/whats-new-in-chrome-devtools",
   "main": "js/reveal.js",
   "scripts": {
