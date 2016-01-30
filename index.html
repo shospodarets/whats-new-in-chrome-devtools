@@ -45,9 +45,14 @@
             <h1>What's new in Chrome DevTools?</h1>
             <p>
                 <small>
-                   Coupl <a href="https://blog.gospodarets.com/">Serg Gospodarets</a>
+                    <a href="https://blog.gospodarets.com/">Serg Gospodarets</a>
                     /
                     <a href="https://twitter.com/malyw">@malyw</a>
+                </small>
+            </p>
+            <p style="text-align: right;">
+                <small>
+                    February 2016, DublinJS
                 </small>
             </p>
         </section>
@@ -56,15 +61,194 @@
             <h2>What is you main browser for development?</h2>
             <img width="670" height="420" data-src="img/browsers.jpg"
                  alt="Browsers"/>
+
+            <aside class="notes">
+                <ul>
+                    <li>
+                        Please raise a hand those of you who use Firefox as a main browser for Web Development. ok.
+                    </li>
+                    <li>
+                        And now- two hands everyone who uses Chrome. Much more, nice :)
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section>
+            <h2>
+                Pane to toggle element classes
+            </h2>
+            <div>
+                <img width="450" height="495" data-src="img/pane-to-toggle-element-classes.gif"
+                     alt="Classes toggle"/>
+            </div>
+            <a href="https://twitter.com/malyw/status/666963686691577856">Video</a>
+
+            <aside class="notes">
+                Useful for testing CSS effects and apps/elements states
+                <ul>
+                    <li>
+                        <a href="http://codepen.io/malyw/pen/MYKmNE">Codepen online/offline CSStransition demo</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#btn-dropdowns-single">Twitter Bootstrap buttons</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section>
+            <h2>CPU Throttling</h2>
+
+            <div>
+                <img width="1066" height="400" data-src="img/cpu-throttling.gif"
+                     alt="Classes toggle"/>
+            </div>
+
+            <a href="https://twitter.com/malyw/status/682179003415969792">Video</a>
+
+            <aside class="notes">
+                Useful to test how your approach would work on weak CPU/old computers and e.g. for load testing
+                <ul>
+                    <li>
+                        <a href="http://jphpsf.github.io/setImmediate-shim-demo/">Quicksort demo.</a>
+                    </li>
+                    <li>
+                        <a href="http://s.codepen.io/malyw/debug/gPKGJR">WebGL demo</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section>
+            <h2>Security panel</h2>
+
+            <div>
+                <img width="671" height="385" data-src="img/security-panel.gif"
+                     alt="Security panel"/>
+            </div>
+
+            <a href="http://blog.chromium.org/2016/01/introducing-security-panel-in-devtools.html">Details</a>
+
+
+            <aside class="notes">
+                Useful when you switching your site to HTTPs and want to find insecure requests otherwise Chrome
+                shows your site as insecure.
+                <ul>
+                    <li>
+                        <a href="http://codepen.io/malyw/pen/BLytG">Image via HTTP</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section>
+            <h3>Promises inspection and uncaught errors</h3>
+
+            <div>
+                <img width="575" height="476" data-src="img/uncaught-in-promise.gif"
+                     alt="Promises inspection and uncaught errors"/>
+            </div>
+
+            <a href="https://twitter.com/malyw/status/674350427845042178">Details</a>
+
+            <aside class="notes">
+                <p>
+                    Now you can inspect all promises in your app
+                </p>
+                <p>
+                    And also see uncaught promises errors and event have event listeners for them (check the details link)
+                </p>
+                <code>
+                    <pre>
+// Uncaught (in promise) ReferenceError
+Promise.resolve()
+    .then((res)=>{
+        notDefined();
+    });
+
+// Caught promise error ReferenceError
+Promise.resolve()
+    .then((res)=>{
+        notDefined();
+    })
+    .catch((err)=>{
+        console.error('Catched promise error', err);
+    });
+                    </pre>
+                </code>
+            </aside>
+        </section>
+
+        <section>
+            <h1>Recording video in Chrome</h1>
+        </section>
+
+        <section data-background="img/wow.gif">
+            <aside class="notes">
+                <p>
+                    If your reaction is like this, please wait.
+                    It's not there.. yet. But it's possible using Chrome filmstrip.
+                </p>
+            </aside>
+        </section>
+
+        <section>
+            <h2>Recording video in Chrome</h2>
+
+            <div>
+                <img width="225" height="450" data-src="img/gif-video.gif"
+                     alt="Gif video in Chrome"/>
+            </div>
+
+            <a href="https://blog.gospodarets.com/demos/chrome-timeline-to-gif/">Demo</a>
+
+            <aside class="notes">
+                <p>
+                    Recently filmstrip was added to Chrome which added ability to record page
+                    screenshots when you are recording timeline in Chrome
+                </p>
+                <p>
+                    I created a simple demo which creates video from recorded timeline data (check the "Demo").
+                </p>
+                <p>
+                    Demo
+                </p>
+                <p>
+                    It can be really useful for:
+                <ol>
+                    <li>Making quick video demos</li>
+                    <li>Small tutorials</li>
+                    <li>To make a video of existing problems</li>
+                </ol>
+                </p>
+                <p>
+                    According to the
+                    <a href="https://github.com/malyw/chrome-timeline-to-gif-demo/issues/2">Paul Irish's excitement</a>
+                    regarding it there is a chance such ability might be added to Chrome
+                </p>
+            </aside>
         </section>
 
         <section data-background="img/end.jpg">
             <h1>Thank you!</h1>
+            <div>
             <span style="vertical-align: 45px;display: inline-block; text-align: left;">
                 <a href="https://twitter.com/malyw">@malyw</a>
             </span>
-            <img style="border-radius: 50%;" width="70" height="70" data-src="img/avatar.png"
-                 alt="Avatar"/>
+                <img style="border-radius: 50%;" width="70" height="70" data-src="img/avatar.png"
+                     alt="Avatar"/>
+            </div>
+            <a href="https://blog.gospodarets.com/whats-new-in-chrome-devtools/">Link to the presentation</a>
+
+            <aside class="notes">
+                <p>
+                    Thanks. you can follow my twitter to be up to date with the latest additions to Chrome.
+                </p>
+                <p>
+                    Questions?
+                </p>
+            </aside>
         </section>
 
     </div>
