@@ -1,4 +1,4 @@
-### [Presentation online](https://blog.gospodarets.com/whats-new-in-chrome-devtools/)
+### [Presentation online](https://shospodarets.github.io/whats-new-in-chrome-devtools/)
 
 # Starting project
 
